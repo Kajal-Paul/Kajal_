@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Input Form</title>
+</head>
+<body>
+   <img src="https://cdn-icons-png.flaticon.com/512/8347/8347432.png" alt="CV icon" height="300px">
+
+    <h2>Resume Input Form</h2>
+    <form action="/submit_resume" method="post">
+        <!-- Full Name -->
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <br><br>
+
+        <!-- Phone Number -->
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        <br><br>
+
+        <!-- Email Address -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Address (Optional) -->
+        <label for="address">Address (Optional):</label>
+        <input type="text" id="address" name="address">
+        <br><br>
+
+        <!-- LinkedIn Profile (Optional) -->
+        <label for="linkedin">LinkedIn Profile (Optional):</label>
+        <input type="url" id="linkedin" name="linkedin">
+        <br><br>
+
+        <!-- Website/Portfolio (Optional) -->
+        <label for="website">Website/Portfolio (Optional):</label>
+        <input type="url" id="website" name="website">
+        <br><br>
+
+        <!-- Date of Birth (Optional) -->
+        <label for="dob">Date of Birth (Optional):</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- Nationality (Optional) -->
+        <label for="nationality">Nationality (Optional):</label>
+        <input type="text" id="nationality" name="nationality">
+        <br><br>
+
+        <!-- Professional Title (Optional) -->
+        <label for="title">Professional Title (Optional):</label>
+        <input type="text" id="title" name="title">
+        <br><br>
+
+        <!-- Gender (Optional) -->
+        <label for="gender">Gender (Optional):</label>
+        <select id="gender" name="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <!-- Marital Status (Optional) -->
+        <label for="maritalStatus">Marital Status (Optional):</label>
+        <select id="maritalStatus" name="maritalStatus">
+            <option value="">Select Status</option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+        </select>
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
